@@ -1,0 +1,77 @@
+<header>
+    <link href="./style.css" rel="stylesheet">
+</header>
+<h1 id="title">Exploring the DOM</h1>
+
+<!-- intro section -->
+<section>
+    <p>Today's lessons have focused on three essential aspects of working with
+        the DOM in web development:</p>
+    <ul>
+        <li><strong>DOM Basic Concepts:</strong> Understanding what the DOM is,
+            how HTML is represented in the DOM, and the significance of text
+            nodes and whitespace nodes.</li>
+        <li><strong>Node Relationships:</strong> Learning how nodes in the DOM
+            tree are related to each other, including parent-child and sibling
+            relationships.</li>
+        <li><strong>Locating Nodes:</strong> Practicing how to find specific
+            nodes in the DOM using various methods, such as by ID or class
+            name.</li>
+    </ul>
+    <p>This interactive exercise will allow you to apply these concepts in a
+        hands-on manner. Follow the instructions in each section, and look at
+        the code to predict and understand how the DOM is manipulated. Let's get
+        started!</p>
+</section>
+
+<main class="container">
+
+    <!-- node relationships section -->
+    <section class="section">
+        <h2 class="sub-title">Node Relationships</h2>
+        <p>1. Explore how nodes are related in the DOM tree. Before clicking the
+            buttons below, look at the code. Find the function that is called by
+            each button's click. Read the code and try to guess which nodes will
+            be affected when highlighting the parent, children, and sibling
+            nodes of this section. Then click on the button to see if you are
+            correct.</p>
+        <button onclick="highlightParent()">Highlight Parent</button>
+        <button onclick="highlightChildren()">Highlight Children</button>
+        <button onclick="highlightSibling()">Highlight Sibling</button>
+        <div class="input-row">
+            <label for="element-input">2. What is the parent element of this
+                "Node Relationships" section?</label>
+            <input type="text" id="element-input" placeholder="Enter tag name (e.g., 'div')">
+            <button onclick="checkElement()">Check Answer</button>
+            <p id="feedback"></p>
+        </div>
+    </section>
+
+    <!-- locating nodes section -->
+    <section class="section">
+        <h2 class="sub-title">Locating Nodes</h2>
+        <p>1. Practice finding nodes using different methods. Before clicking
+            the buttons below, look at the code. Find the function that is
+            called by each button's click. Read the code and try to guess which
+            elements will be targeted in that function, and what will happen
+            when you click on the button. After you predict their behaviors,
+            click on each button to see if you are correct.</p>
+        <button onclick="findById()">Find by ID</button>
+        <button onclick="findByClass()">Find by Class</button>
+        <button onclick="findByTagName()">Find by Tag Name</button>
+        <button onclick="findByQuerySelector()">Find by Query Selector</button>
+        <p>2. Next, reflect on the actions performed by the buttons, and modify
+            the functions to create your own manipulations. Try to make
+            different things happen with each button. Then click on the buttons
+            to test your changes.</p>
+    </section>
+
+</main>
+
+<!-- summary -->
+<footer>
+    <h2>Summary</h2>
+    <p>Understanding how to traverse and manipulate the DOM is a key skill in
+        web development. Experiment on your own to reinforce these concepts.</p>
+</footer>
+<script src="./app.js"></script>
