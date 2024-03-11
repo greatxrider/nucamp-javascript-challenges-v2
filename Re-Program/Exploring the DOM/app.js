@@ -1,54 +1,51 @@
 // Function to highlight the parent node of the first section
 function highlightParent() {
-    const section = document.querySelector(".section");
-    const parent = section.parentNode;
-    parent.style.backgroundColor = "#b3d6f0"; // Lighter shade of primary color for parent
+    const section = document.querySelector('.section');
+    let parent = section.parentNode;
+    parent.style.backgroundColor = '#b3d6f0';
 }
 
 // Function to highlight the children nodes of the first section
 function highlightChildren() {
-    const section = document.querySelector(".section");
+    const section = document.querySelector('.section');
     const children = section.children;
-    for (let i = 0, len = children.length; i < len; i++) {
-        children[i].style.backgroundColor = "#e6b3d9"; // Lighter shade of secondary color for children
+    for(let i = 0, len = children.length; i < len; i++) {
+        children[i].style.backgroundColor = '#E6B3D9';
     }
 }
 
 // Function to find an element by its ID and change its text
 function findById() {
-    const title = document.getElementById("title");
-    title.innerHTML = "ID Found: Exploring the DOM";
+   const id = document.getElementById('title');
+   id.innerHTML = 'ID Found: Exploring the DOM';
 }
 
 // Function to find elements by class and change their text
 function findByClass() {
-    const subTitles = document.getElementsByClassName("sub-title");
-    for (let i = 0; i < subTitles.length; i++) {
-        subTitles[i].innerHTML = "Class Found: " + subTitles[i].innerHTML;
+    const classElements = document.getElementsByClassName('section');
+    for(let i = 0, len = classElements.length; i < len; i++) {
+        classElements[i].firstElementChild.innerHTML = `Class Found: ${classElements[i].firstElementChild.innerHTML}`;
     }
 }
 
 // Function to find elements by tag name
 function findByTagName() {
-    const paragraphs = document.getElementsByTagName("p");
-    for (let i = 0; i < paragraphs.length; i++) {
-        paragraphs[i].style.fontWeight = "bold"; // Making all paragraphs bold
+    const tagElements = document.getElementsByTagName('p');
+    for(let i = 0, len = tagElements.length; i < len; i++) {
+        tagElements[i].style.fontWeight = 'bold';
     }
 }
 
 // Function to find elements by query selector
 function findByQuerySelector() {
-    const firstSection = document.querySelector(".section");
+    const firstSection = document.querySelector('.section');
     firstSection.style.border = "3px solid #0096dc"; // Use primary color
 }
 
 // Function to highlight the sibling node of the first section
 function highlightSibling() {
-    const section = document.querySelector(".section");
-    const sibling = section.nextElementSibling || section.previousElementSibling;
-    if (sibling) {
-        sibling.style.backgroundColor = "#ffd699"; // Lighter shade for sibling
-    }
+    const section = document.querySelectorAll('.section')[1];
+    section.style.backgroundColor = '#FFD699';
 }
 
 //---------------Do not change the code below this line---------------------

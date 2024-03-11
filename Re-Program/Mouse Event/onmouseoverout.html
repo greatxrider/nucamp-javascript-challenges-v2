@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Onmouseover & Onmouseout Demo</title>
+    <style>
+        div {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="changeBackground('red');" onmouseout="changeBackground('yellow');">
+        Move your mouse over this text, then move it out
+    </div>
+
+    <script>
+        const divElement = document.getElementsByTagName('div');
+
+        function changeBackground(color) {
+            divElement[0].style.backgroundColor = `${color}`;
+        }
+
+    </script>
+</body>
+</html>

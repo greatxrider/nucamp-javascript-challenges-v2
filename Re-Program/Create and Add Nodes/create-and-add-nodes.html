@@ -15,15 +15,15 @@
 
     <script>
         function insertNewElement() {
-            const newEl = document.createElement('hr');
-            const parentNode = document.querySelector('#firstP');
-            parentNode.insertBefore(newEl, parentNode.firstChild);
+            const firstPharagrap = document.getElementById('firstP');
+            const newElement = document.createElement('hr');
+            firstPharagrap.insertBefore(newElement, firstPharagrap.firstChild); 
         }
 
         function insertNewText() {
-            const newText = document.createTextNode(' This is dynamically added text!');
-            const parentNode = document.getElementById('secondP');
-            parentNode.appendChild(newText);
+            const newText = document.createTextNode(' This is dynamically added text! ');
+            const secondPharagrap = document.getElementById('secondP');
+            secondPharagrap.appendChild(newText);
         }
     </script>
 </body>
