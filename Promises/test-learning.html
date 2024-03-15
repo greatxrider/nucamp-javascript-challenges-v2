@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Quiz: Understanding Promises</title>
+    <style>
+        #feedback {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Mini-Quiz: Understanding Promises</h3>
+    <p>1. How does the <strong>then</strong> method work in Promises, and what is its primary purpose?</p>
+    <label><input type="radio" name="q1" value="a">a) It is used to handle errors in the Promise.</label><br>
+    <label><input type="radio" name="q1" value="b">b) It is used to define what should happen when the Promise is
+        resolved successfully.</label><br>
+    <label><input type="radio" name="q1" value="c">c) It is used to define what should happen when the Promise is
+        rejected.</label><br>
+    <label><input type="radio" name="q1" value="d">d) It is used to execute cleanup code after the Promise is
+        settled.</label><br>
+
+    <p>2. Explain how the <strong>catch</strong> method in Promises relates to error handling in try/catch statements.
+    </p>
+    <label><input type="radio" name="q2" value="a">a) They are used to execute code after the Promise is
+        settled.</label><br>
+    <label><input type="radio" name="q2" value="b">b) They are used to define what should happen when the Promise is
+        resolved.</label><br>
+    <label><input type="radio" name="q2" value="c">c) They are used to handle any errors that occur in a Promise
+        chain.</label><br>
+    <label><input type="radio" name="q2" value="d">d) They are unrelated to each other.</label><br>
+
+    <p>3. You can chain multiple Promises together for sequential execution by using the <span><input type="text"
+                id="question3" placeholder="Enter the missing word"></span> method, which returns a new Promise.</p>
+
+    <button onclick="checkAnswers()">Check Answers</button>
+    <div id="feedback"></div>
+    <script src="./test-learning.js"></script>
+</body>
+
+</html>
